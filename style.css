@@ -1,0 +1,45 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr.data-row {
+  display: none;
+}
+
+/* Inputed in the field */
+
+.table-row td {
+  text-align: center;
+  cursor: pointer;
+}
+
+.data-row td {
+  text-align: left;
+}
+
+thead tr th {
+  text-align: center;
+  color: #007aff;
+}
+
+.color-one {
+  background-color: #e8e9eb;
+}
+
+li {
+  list-style: none;
+  margin: 10px 0px;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <table class="shadow">
+            <thead>
+              <tr>
+                <th>Account Size</th>
+                <th>$6,000</th>
+                <th>$15,000</th>
+                <th>$25,000</th>
+                <th>$50,000</th>
+                <th>$100,000</th>
+                <th>$200,000</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row" data-target="data-row-1">
+                <td>Profit Share From Challenge Phase</td>
+                <td>15% ($117)</td>
+                <td>15% ($292.5)</td>
+                <td>15% ($487.5)</td>
+                <td>15% ($975)</td>
+                <td>15% ($1,950)</td>
+                <td>15% ($3,900)</td>
+              </tr>
+              <tr class="data-row" id="data-row-1">
+                <td colspan="7">
+                  FundedNext is the only prop firm to offer a 15% profit sharing
+                  from the profit you make during the challenge phases. This is
+                  to incentivize our top traders and to deliver on our promise
+                  of the world’s best payout bonuses
+                </td>
+              </tr>
+              <tr class="table-row color-one" data-target="data-row-2">
+                <td>Phase 1 Profit Target</td>
+                <td>8%</td>
+                <td>8%</td>
+                <td>8%</td>
+                <td>8%</td>
+                <td>8%</td>
+                <td>8%</td>
+              </tr>
+              <tr class="data-row" id="data-row-2">
+                <td colspan="7">
+                  At FundedNext, you can get funded by reaching a small profit
+                  target in the challenge phase. For example: If you sign up for
+                  a 15K Stellar 1-Step challenge, your profit target will be
+                  10%. Similarly, if you sign up for a 15K Stellar 2-Step
+                  challenge, your profit target for Phase 1 will be 8%. For
+                  different funding models the percentage of profit target is
+                  different. After achieving the profit target, you will be able
+                  to start trading in your FundedNext Account.
+                </td>
+              </tr>
+              <tr class="table-row" data-target="data-row-3">
+                <td>Phase 2 Profit Target</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td>5%</td>
+              </tr>
+              <tr class="data-row" id="data-row-3">
+                <td colspan="7">
+                  In the 2-step challenges such as FundedNext Evaluation or
+                  2-step Stellar challenge, traders need to profit 5% on their
+                  phase-2 challenge accounts.
+                </td>
+              </tr>
+              <tr class="table-row color-one" data-target="data-row-4">
+                <td>Maximum Daily Loss</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td>5%</td>
+                <td>5%</td>
+              </tr>
+              <tr class="data-row" id="data-row-4">
+                <td colspan="7">
+                  <ul>
+                    <li>
+                      Our daily loss limit specifies that you are permitted to
+                      lose 5% of your initial account balance on any given day.
+                    </li>
+                    <li>So here is how the calculation works:</li>
+                    <li>
+                      Your daily loss limit = Cumulative PnL of your open and
+                      close positions for the day.
+                    </li>
+                    <li>
+                      This implies that on that specific day, this number should
+                      not exceed 5% of your initial account balance.
+                    </li>
+                    <li>
+                      For example, if you have a $100,000 account, the maximum
+                      daily loss limit is $5,000, and you are not allowed to
+                      lose more than $5,000 on any given day. Suppose you have
+                      lost a total of $3000 in your closed trades. In such a
+                      case, you cannot lose more than $2000, including floating
+                      losses. Note that swap and commission rates are included
+                      in this calculation. If you lose more than $2000, it will
+                      be considered a violation.
+                    </li>
+                    <li>
+                      Similarly, let's say you gained $5,000 in profit in a
+                      single day. In such case, you will be allowed to lose
+                      $5,000 (your profit) + $5,000 (your daily loss limit) =
+                      $10,000. Loosing more than $10,000 (in both open and
+                      closed positions) will be considered a violation.
+                    </li>
+                    <li>
+                      Let's look at another case. Assume, like in the previous
+                      scenario, that you lost $3000 in a single day. Then you
+                      take a trade that is now running at a floating loss of
+                      -$2500, but when you close it, it becomes positive $500.
+                      If this occurs, according to our calculations, you will
+                      have exceeded your daily loss limit the instant your loss
+                      exceeds $5000.
+                    </li>
+                    <li>
+                      Another thing to keep in mind is that your daily loss
+                      limit will be reset at midnight according to the server
+                      time. As an example, suppose you have gained a $2000
+                      profit in a closed trade and you have a trade that is
+                      currently running in -$6000 floating loss. In this case,
+                      you still have not violated your daily drawdown for the
+                      day because your current daily loss is +$2000 - $6000=
+                      -$4000. However, if you hold this one trade with a
+                      floating loss of $6000 after midnight, you will breach the
+                      daily loss limit because a new day begins after midnight
+                      and you have already lost $6000, which is more than your
+                      daily loss limit of $5000.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="table-row" data-target="data-row-5">
+                <td>Maximum Overall Loss</td>
+                <td>10%</td>
+                <td>10%</td>
+                <td>10%</td>
+                <td>10%</td>
+                <td>10%</td>
+                <td>10%</td>
+              </tr>
+              <tr class="data-row" id="data-row-5">
+                <td colspan="7">
+                  You are allowed to have an overall maximum loss limit of 10%
+                  of your initial account balance on the Evaluation, Express &
+                  Stellar 2-step challenges. On the other hand, your overall
+                  maximum loss limit on the Stellar 1-step challenge is 6%.
+                  Thus, at any time during your whole challenge phase, your
+                  account balance/equity can't go below 90% of initial balance
+                  for the Evaluation, Express & Stellar 2-step challenges and
+                  94% for the Stellar 1-step challenge.
+                </td>
+              </tr>
+              <tr class="table-row color-one" data-target="data-row-6">
+                <td>Drawdown Type</td>
+                <td>Balance Based</td>
+                <td>Balance Based</td>
+                <td>Balance Based</td>
+                <td>Balance Based</td>
+                <td>Balance Based</td>
+                <td>Balance Based</td>
+              </tr>
+              <tr class="data-row" id="data-row-6">
+                <td colspan="7">
+                  At FundedNext, the max daily drawdown is calculated based on
+                  your balance. If you have trades running when a new trading
+                  day starts, the ‘balance’ at that time will be considered for
+                  Daily drawdown calculation, not the ‘equity’. This is to
+                  deliver on our promise of the world's most reliable prop firm.
+                </td>
+              </tr>
+              <tr class="table-row" data-target="data-row-7">
+                <td>Time Limit</td>
+                <td>No Time Limit</td>
+                <td>No Time Limit</td>
+                <td>No Time Limit</td>
+                <td>No Time Limit</td>
+                <td>No Time Limit</td>
+                <td>No Time Limit</td>
+              </tr>
+              <tr class="data-row" id="data-row-7">
+                <td colspan="7">
+                  There are No Time Limits for the Stellar 2-step & 1-step
+                  Challenges and the Express Model. It means you can take as
+                  much time as you want to reach the profit target. However, In
+                  the Evaluation model, you will need to reach the profit target
+                  within a mentioned period.
+                </td>
+              </tr>
+              <tr class="table-row color-one" data-target="data-row-8">
+                <td>Minimum Trading Days</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+              </tr>
+              <tr class="data-row" id="data-row-8">
+                <td colspan="7">
+                  You are required to take a minimum of 5 individual and
+                  separate trades on 5 separate trading days during your
+                  Evaluation & Stellar challenge. However, in the Express
+                  challenge, you are required to take a minimum of 10 individual
+                  and separate trades on 10 separate trading days.
+                </td>
+              </tr>
+              <tr class="table-row" data-target="data-row-9">
+                <td>Commissions</td>
+                <td>3$/Per Lot</td>
+                <td>3$/Per Lot</td>
+                <td>3$/Per Lot</td>
+                <td>3$/Per Lot</td>
+                <td>3$/Per Lot</td>
+                <td>3$/Per Lot</td>
+              </tr>
+              <tr class="data-row" id="data-row-9">
+                <td colspan="7">
+                  FundedNext offers the lowest commissions for traders with
+                  3$/round lot on Currency Pairs & Commodities and 0$/round lot
+                  on Indices
+                </td>
+              </tr>
+              <tr class="table-row color-one" data-target="data-row-10">
+                <td>Profit Split Upto</td>
+                <td>90%</td>
+                <td>90%</td>
+                <td>90%</td>
+                <td>90%</td>
+                <td>90%</td>
+                <td>90%</td>
+              </tr>
+              <tr class="data-row" id="data-row-10">
+                <td colspan="7">
+                  To recognize your skills & efforts, FundedNext is offering up
+                  to 90% profit sharing with the traders.
+                </td>
+              </tr>
+              <tr class="table-row" data-target="data-row-11">
+                <td>Trading Leverage</td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr class="data-row" id="data-row-11">
+                <td colspan="7">
+                  At FundedNext, we are committed to providing flexible trading
+                  conditions tailored to your needs. That’s why, we allow news
+                  trading in Evaluation, Stellar 1-Step and Stellar-2 Step
+                  Challenge. However, in the express model, this option is not
+                  available.
+                </td>
+              </tr>
+              <tr class="table-row color-one" data-target="data-row-12">
+                <td>Weekend Holding</td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr class="data-row" id="data-row-12">
+                <td colspan="7">
+                  With FundedNext you can hold any trading during the weekend in
+                  Evaluation, Stellar Challenge and Express Non-Consistency
+                  model.
+                </td>
+              </tr>
+              <tr class="table-row" data-target="data-row-13">
+                <td>Expert Advisors</td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+                <td><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr class="data-row" id="data-row-13">
+                <td colspan="7">
+                  Expert Advisor is allowed with all the funding models
+                </td>
+              </tr>
+            </tr>
+            <tr class="table-row color-one" data-target="data-row-14">
+              <td>Trade Copiers</td>
+              <td><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr class="data-row" id="data-row-14">
+              <td colspan="7">
+                Using trade copier software is allowed with all the FundedNext Challenges.
+              </td>
+            </tr>
+            <tr class="table-row" data-target="data-row-15">
+                <td>Reset Discount</td>
+                <td>10%</td>
+                <td>10%</td>
+                <td>10%</td>
+                <td>10%</td>
+                <td>10%</td>
+                <td>10%</td>
+              </tr>
+              <tr class="data-row" id="data-row-15">
+                <td colspan="7">
+                    If you violate any rule, your account will be suspended. But you will receive the opportunity to continue with the program at a discounted price. This re-registration cost is also known as the 'reset' fee since you will restart your trading cycle. This option is applicable when you are in Steller 1-step Demo Phase, Steller 2-Step Demo Phase. Evaluation phase-1, and Express Demo phase. The reset fee is 90% of the original price for Evaluation and Steller and 80% of the original price for the Express Model.
+                    For example, you have a 15K Evaluation Model account. The original price of the account is $99. If you breach your account during your Phase-1 trading cycle, you won't be eligible to trade in the account. But at FundedNext, traders can restart their trading journey by paying $89 as reset fee in this situation.
+                </td>
+              </tr>
+              <tr class="table-row color-one" data-target="data-row-16">
+                <td>Refundable Fee</td>
+                <td>$59</td>
+                <td>$119</td>
+                <td>$199</td>
+                <td>$299</td>
+                <td>$519</td>
+                <td>$999</td>
+              </tr>
+              <tr class="data-row" id="data-row-16">
+                <td colspan="7">
+                    You are eligible to get back your registration fee once you are a FundedNext Trader
+                </td>
+              </tr>
+              <tr class="table-row" data-target="data-row-17">
+                <td>Choose your desired plan</td>
+                <td><button class="btn btn-sm btn-primary">Start Challenge</button></td>
+                <td><button class="btn btn-sm btn-primary">Start Challenge</button></td>
+                <td><button class="btn btn-sm btn-primary">Start Challenge</button></td>
+                <td><button class="btn btn-sm btn-primary">Start Challenge</button></td>
+                <td><button class="btn btn-sm btn-primary">Start Challenge</button></td>
+                <td><button class="btn btn-sm btn-primary">Start Challenge</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
